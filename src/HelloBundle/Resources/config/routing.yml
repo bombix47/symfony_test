@@ -1,3 +1,7 @@
 hello_homepage:
     path:     /hello/{name}/{sex}
-    defaults: { _controller: HelloBundle:Hello:index }
+#    path:     /hello/{name}
+    defaults: { _controller: HelloBundle:Hello:index , requirements : sex : h|f}
+#    defaults: { _controller: HelloBundle:Hello:hello }
+
+

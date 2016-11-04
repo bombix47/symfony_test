@@ -3,6 +3,7 @@
 namespace HelloBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 
 class HelloController extends Controller
 {
@@ -20,5 +21,8 @@ class HelloController extends Controller
                 break;
         }
         return $this->render('HelloBundle:Hello:index.html.twig',array('name'=>$name,'type'=>$type));
+    }
+    public function helloAction($name) {
+        return new Response('Hello ' . $name . ', you are in the "hello" action (controller)');
     }
 }

@@ -1,0 +1,25 @@
+book_create:
+    path:     /book/create
+    defaults: { _controller: AppBundle:Default:create }
+
+book_show:
+    path:     /book/show/{id}
+    defaults: { _controller: AppBundle:Default:show }
+
+book_update:
+    path:     /book/update/{id}
+    defaults: { _controller: AppBundle:Default:update }
+
+book_delete:
+    path:     /book/delete/{id}
+    defaults: { _controller: AppBundle:Default:delete }
+
+user_create:
+    path:     /user/create
+    defaults: { _controller: AppBundle:Default:createUser }
+
+user_locate:
+    path:     /user/locate/{userId}/{bookId}
+    defaults: { _controller: AppBundle:Default:locateUser }
+
+

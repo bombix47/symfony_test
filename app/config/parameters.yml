@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: localhost
+    database_port: null
+    database_name: sf_training
+    database_user: root
+    database_password: root
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: null
+    mailer_password: null
+    secret: 83d564ca5a528b8efe551e3000643b9ddeeba5d0
