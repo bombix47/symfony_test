@@ -25,6 +25,7 @@ class DefaultController extends Controller
 
     public function createAction()
     {
+        $this->getRequest();
         $book = new Book();
         $book->setIsbn('9782070752447');
         $book->setTitle('Villa vortex');
